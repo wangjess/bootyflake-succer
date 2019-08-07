@@ -1,2 +1,2 @@
 # super-super-heroku-bot
-Bot using heroku, 24/7!
+a booty flake succer bot, will emit positive impulses (messages) in your Discord server
