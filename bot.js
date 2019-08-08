@@ -3,6 +3,11 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
+
+    const response = await fetch('https://icanhazdadjoke.com/');
+    const myJson = await response.json(); //extract JSON from the http response
+    // do something with myJson
+    message.reply('myJson');
 });
 
 client.on('message', message => {
@@ -10,8 +15,6 @@ client.on('message', message => {
     	message.reply('pong');
   	}
 });
-
-userAction();
 
 const userAction = async () => {
     console.log('Getting dad joke');
