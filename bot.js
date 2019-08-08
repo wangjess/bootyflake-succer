@@ -19,25 +19,16 @@ client.on('message', async message => {
 
 const userAction = async () => {
     console.log('Getting dad joke');
-
-    const response = await fetch('http://icanhazdadjoke.com/',
-    {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'text/plain'
-        },
-    });
-
     try {
         console.log("try to make call");
-        const response = await fetch('http://icanhazdadjoke.com/',
+        const response = await fetch('https://icanhazdadjoke.com/',
         {
             method: 'GET',
             headers: {
-              'Content-Type': 'text/plain'
+              'Content-Type': 'application/json'
             },
         });
-        const text = await response.text();
+        const text = await response.json();
         console.log("what does response say..");
         console.log(response);
         console.log("pritned rewsponse");
