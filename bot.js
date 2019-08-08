@@ -3,6 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
+    console.log('hello');
     const userAction = async () => {
         console.log('Getting dad joke');
         const response = await fetch('https://icanhazdadjoke.com/');
