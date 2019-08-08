@@ -17,14 +17,15 @@ client.on('message', async message => {
 const userAction = async () => {
     console.log('Getting dad joke');
     try {
-        const response = await fetch('http://icanhazdadjoke.com/', 
+        console.log("try to make call");
+        const response = await fetch('http://icanhazdadjoke.com/',
+        console.log(response);
         {
             method: 'GET',
             headers: {
               'Content-Type': 'text/plain'
             },
-        }
-        );
+        });
         const text = await response;
         // do something with myJson
         console.log(text);
