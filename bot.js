@@ -24,13 +24,14 @@ const userAction = async () => {
             },
         }
         );
+        const text = await response;
+        // do something with myJson
+        console.log(text);
     }
     catch {
         console.log("fuck me up the bumhole");
+        message.reply('sorry it aint work');
     }
-    const text = await response;
-    // do something with myJson
-    console.log(text);
 }
 
 // THIS  MUST  BE  THIS  WAY
