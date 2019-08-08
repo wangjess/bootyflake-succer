@@ -15,7 +15,7 @@ client.on('message', message => {
 
 const userAction = async () => {
     console.log('Getting dad joke');
-    const response = await fetch('https://icanhazdadjoke.com/');
+    const response = await fetch('http://icanhazdadjoke.com/');
     const myJson = await response.json(); //extract JSON from the http response
     // do something with myJson
     message.reply('myJson');
