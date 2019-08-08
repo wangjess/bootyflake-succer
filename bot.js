@@ -24,10 +24,10 @@ client.on('message', async message => {
     }
 });
 
+// Function that gives you a dad joke
 const userAction = async () => {
     console.log('Getting dad joke');
     try {
-        console.log("try to make call");
         const response = await fetch('https://icanhazdadjoke.com/',
         {
             method: 'GET',
@@ -36,15 +36,14 @@ const userAction = async () => {
             },
         });
         const myJson = await response.json();
-        // do something with myJson
-        console.log(myJson);
-        console.log(myJson["joke"])
         return myJson["joke"];
     }
     catch {
-        console.log("fuck me up the bumhole");
+        console.log("FoOk mEh uP DeE BuMh0l3. Caught an error.");
     }
 }
+
+// 
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
