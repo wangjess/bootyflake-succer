@@ -1,16 +1,18 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', async () => {
+client.on('ready', () => {
     console.log('I am ready!');
     console.log('hello');
-    await userAction();
 });
 
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
-  	}
+    }
+    else if (message.content === '!dadjoke!') {
+        await userAction();
+    }
 });
 
 const userAction = async () => {
