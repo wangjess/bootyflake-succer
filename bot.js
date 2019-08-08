@@ -7,7 +7,7 @@ client.on('ready', () => {
     const response = await fetch('https://icanhazdadjoke.com/');
     const myJson = await response.json(); //extract JSON from the http response
     // do something with myJson
-    message.reply('myJson');
+    console.log(myJson);
 });
 
 client.on('message', message => {
