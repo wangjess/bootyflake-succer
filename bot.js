@@ -13,9 +13,8 @@ client.on('message', async message => {
     	message.reply('pong');
     }
     else if (message.content === '!dadjoke') {
-        message.reply('Here\'s a dad joke...')
         var dadJoke = await userAction();
-        message.reply(dadJoke);
+        message.reply('Here\'s a dad joke...' + dadJoke);
     }
 });
 
