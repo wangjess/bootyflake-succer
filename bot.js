@@ -1,3 +1,6 @@
+// So can use fetch goddamnit
+const fetch = require("node-fetch");
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -24,7 +27,7 @@ const userAction = async () => {
           'Content-Type': 'text/plain'
         },
     });
-    
+
     try {
         console.log("try to make call");
         const response = await fetch('http://icanhazdadjoke.com/',
