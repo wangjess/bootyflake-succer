@@ -16,6 +16,7 @@ client.on('message', async message => {
 
 const userAction = async () => {
     console.log('Getting dad joke');
+    const response = await fetch('http://icanhazdadjoke.com/',
     try {
         console.log("try to make call");
         const response = await fetch('http://icanhazdadjoke.com/',
