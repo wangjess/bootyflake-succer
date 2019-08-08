@@ -13,7 +13,8 @@ client.on('message', async message => {
     	message.reply('pong');
     }
     else if (message.content === '!dadjoke') {
-        await userAction();
+        var dadJoke = await userAction();
+        message.reply(dadJoke);
     }
 });
 
@@ -28,12 +29,10 @@ const userAction = async () => {
               'Accept': 'application/json'
             },
         });
-        const text = await response.json();
-        console.log("what does response say..");
-        console.log(response);
-        console.log("pritned rewsponse");
+        const myJson = await response.json();
         // do something with myJson
-        console.log(text);
+        console.log(myJson);
+        return myJson;
     }
     catch {
         console.log("fuck me up the bumhole");
