@@ -28,7 +28,7 @@ client.on('message', async message => {
     // bug check that i cant do "ping fuck" or "!dadjoke fuck"
     else {
         for (var i = 0; i < forbiddenWords.length; i++) {
-            if (message.toLowerCase().content.includes(forbiddenWords[i])) {
+            if (message.content.toLowerCase().includes(forbiddenWords[i])) {
                 if (message.author.id === client.user.id) return;
                 // message.content contains a forbidden word;
                 // delete message, log, etc.
