@@ -25,10 +25,10 @@ const userAction = async () => {
               'Content-Type': 'text/plain'
             },
         });
+        const text = await response.text();
         console.log("what does response say..");
         console.log(response);
         console.log("pritned rewsponse");
-        const text = await response;
         // do something with myJson
         console.log(text);
     }
