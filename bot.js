@@ -8,6 +8,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+// Will recognize commands to generate various quotes
 client.on('message', async message => {
     if (message.content === 'ping') {
     	message.reply('pong');
@@ -22,6 +23,7 @@ client.on('message', async message => {
     else if (message.content === '!love') {
         message.reply('');
     }
+    // TODO: Add something that will detect common bad words and tell you to stop fucking cursing or Bootyflake Succer will lick your anus
 });
 
 // Function that gives you a dad joke
