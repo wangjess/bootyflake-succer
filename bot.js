@@ -21,7 +21,7 @@ const userAction = async () => {
     console.log('Getting dad joke');
     try {
         console.log("try to make call");
-        const response = await fetch('https://icanhazdadjoke.com/',
+        const response = await fetch('https://icanhazdadjoke.com/slack',
         {
             method: 'GET',
             headers: {
