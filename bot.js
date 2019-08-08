@@ -21,11 +21,11 @@ const userAction = async () => {
     console.log('Getting dad joke');
     try {
         console.log("try to make call");
-        const response = await fetch('https://icanhazdadjoke.com/slack',
+        const response = await fetch('https://icanhazdadjoke.com/',
         {
             method: 'GET',
             headers: {
-              'Content-Type': 'application/json'
+              'Accept': 'application/json'
             },
         });
         const text = await response.json();
