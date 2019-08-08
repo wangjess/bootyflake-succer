@@ -19,13 +19,13 @@ const userAction = async () => {
     try {
         console.log("try to make call");
         const response = await fetch('http://icanhazdadjoke.com/',
-        console.log(response);
         {
             method: 'GET',
             headers: {
               'Content-Type': 'text/plain'
             },
         });
+        console.log(response);
         const text = await response;
         // do something with myJson
         console.log(text);
