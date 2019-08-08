@@ -22,16 +22,15 @@ const userAction = async () => {
             headers: {
               'Content-Type': 'text/plain;charset=UTF-8'
             },
-            body: JSON.stringify(user)
-          }
+        }
         );
     }
     catch {
         console.log("fuck me up the bumhole");
     }
-    const myJson = await response.json(); //extract JSON from the http response
+    const text = await response; //extract JSON from the http response
     // do something with myJson
-    message.reply('myJson');
+    console.log(text);
 }
 
 // THIS  MUST  BE  THIS  WAY
