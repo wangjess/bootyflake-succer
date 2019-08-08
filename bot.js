@@ -6,7 +6,7 @@ client.on('ready', () => {
     console.log('hello');
 });
 
-client.on('message', message => {
+client.on('message', message, async () => {
     if (message.content === 'ping') {
     	message.reply('pong');
     }
