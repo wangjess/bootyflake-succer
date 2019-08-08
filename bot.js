@@ -6,11 +6,11 @@ client.on('ready', () => {
     console.log('hello');
 });
 
-client.on('message', message, async () => {
+client.on('message', async (message) => {
     if (message.content === 'ping') {
     	message.reply('pong');
     }
-    else if (message.content === '!dadjoke!') {
+    else if (message.content === '!dadjoke') {
         await userAction();
     }
 });
