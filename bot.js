@@ -20,7 +20,7 @@ const userAction = async () => {
         {
             method: 'GET',
             headers: {
-              'Content-Type': 'text/plain;charset=UTF-8'
+              'Content-Type': 'text/plain'
             },
         }
         );
@@ -28,7 +28,7 @@ const userAction = async () => {
     catch {
         console.log("fuck me up the bumhole");
     }
-    const text = await response; //extract JSON from the http response
+    const text = await response;
     // do something with myJson
     console.log(text);
 }
