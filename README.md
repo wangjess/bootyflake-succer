@@ -9,4 +9,6 @@ For example, make it emit great dad jokes with the **!dadjoke** command such as.
 
 
 # Bonus Effects
+
+## ForbiddenWords
 Bootyflake-Succer will also detect if bad words are said in your server and promptly send a scornful message to the bad word-sayer! You can turn this feature off by going into ```bot.js``` and setting ```detectBadWords``` to ```false```.
