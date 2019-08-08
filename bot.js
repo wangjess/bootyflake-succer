@@ -11,6 +11,8 @@ client.on('message', message => {
   	}
 });
 
+userAction();
+
 const userAction = async () => {
     console.log('Getting dad joke');
     const response = await fetch('https://icanhazdadjoke.com/');
