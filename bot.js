@@ -4,6 +4,8 @@ const fetch = require("node-fetch");
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+const forbiddenWords = ['fuck']
+
 client.on('ready', () => {
     console.log('I am ready!');
 });
@@ -24,6 +26,17 @@ client.on('message', async message => {
         message.reply('');
     }
     // TODO: Add something that will detect common bad words and tell you to stop fucking cursing or Bootyflake Succer will lick your anus
+    // bug check that i cant do "ping fuck" or "!dadjoke fuck"
+    else {
+        for (var i = 0; i < forbiddenWords.length; i++) {
+            if (message.content.includes(forbiddenWords[i])) {
+                // message.content contains a forbidden word;
+                // delete message, log, etc.
+                message.reply('Stop fucking cursing or I\'m going to lick your asshole, bitch.');
+                break;
+            }
+        }
+    }
 });
 
 // Function that gives you a dad joke
