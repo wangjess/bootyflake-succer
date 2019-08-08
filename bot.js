@@ -3,7 +3,6 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    console.log('hello');
 });
 
 client.on('message', async message => {
@@ -32,7 +31,6 @@ const userAction = async () => {
     }
     catch {
         console.log("fuck me up the bumhole");
-        message.reply('sorry it aint work');
     }
 }
 
