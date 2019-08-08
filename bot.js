@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const forbiddenWords = ['fuck', 'bitch', 'asshole', 'dumbass', 'cunt']
-const detectBadWords = true;
+const detectBadWords = false; // Toggle me for bad word screening!
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -16,7 +16,7 @@ client.on('message', async message => {
     	message.reply('pong');
     }
     else if (message.content === '!dadjoke') {
-        var dadJoke = await userAction();
+        var dadJoke = await getDadJoke();
         message.reply(dadJoke);
     }
     else if (message.content === '!happy') {
@@ -41,7 +41,7 @@ client.on('message', async message => {
 });
 
 // Function that gives you a dad joke
-const userAction = async () => {
+const getDadJoke = async () => {
     console.log('Getting dad joke');
     try {
         const response = await fetch('https://icanhazdadjoke.com/',
@@ -55,7 +55,7 @@ const userAction = async () => {
         return myJson["joke"];
     }
     catch {
-        console.log("FoOk mEh uP DeE BuMh0l3. Caught an error.");
+        console.log("FoOk mEh uP DeE BuMh0l3. Caught an error in getDadJoke.");
     }
 }
 
