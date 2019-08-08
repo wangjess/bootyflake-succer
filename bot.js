@@ -3,11 +3,13 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-
-    const response = await fetch('https://icanhazdadjoke.com/');
-    const myJson = await response.json(); //extract JSON from the http response
-    // do something with myJson
-    console.log(myJson);
+    const userAction = async () => {
+        console.log('Getting dad joke');
+        const response = await fetch('https://icanhazdadjoke.com/');
+        const myJson = await response.json(); //extract JSON from the http response
+        // do something with myJson
+        console.log(myJson);
+    }
 });
 
 client.on('message', message => {
