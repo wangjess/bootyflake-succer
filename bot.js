@@ -33,7 +33,8 @@ const userAction = async () => {
         const myJson = await response.json();
         // do something with myJson
         console.log(myJson);
-        return myJson;
+        console.log(myJson["joke"])
+        return myJson["joke"];
     }
     catch {
         console.log("fuck me up the bumhole");
