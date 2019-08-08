@@ -16,7 +16,15 @@ client.on('message', message => {
 const userAction = async () => {
     console.log('Getting dad joke');
     try {
-        const response = await fetch('http://icanhazdadjoke.com/', [text/plain]);
+        const response = await fetch('http://icanhazdadjoke.com/', 
+        {
+            method: 'GET',
+            headers: {
+              'Content-Type': 'application/json;charset=utf-8'
+            },
+            body: JSON.stringify(user)
+          }
+        );
     }
     catch {
         console.log("fuck me up the bumhole");
