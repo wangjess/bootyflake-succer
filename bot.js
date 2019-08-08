@@ -33,7 +33,7 @@ client.on('message', async message => {
                 if (message.author.id === client.user.id) return;
                 // message.content contains a forbidden word;
                 // delete message, log, etc.
-                message.reply('Stop fucking cursing or I\'m going to lick your asshole, bitch. I\'m sorry, I shouldn\'t say that...');
+                message.reply('Stop fucking cursing or I\'m going to suck your bootyflakes! I\'m sorry, I shouldn\'t say that...');
                 break;
             }
         }
