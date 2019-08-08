@@ -20,7 +20,7 @@ const userAction = async () => {
         {
             method: 'GET',
             headers: {
-              'Content-Type': 'application/json;charset=utf-8'
+              'Content-Type': 'text/plain;charset=UTF-8'
             },
             body: JSON.stringify(user)
           }
