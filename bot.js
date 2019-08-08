@@ -3,7 +3,7 @@ const fetch = require("node-fetch");
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const forbiddenWords = ['fuck', 'bitch', 'asshole', 'dumbass', 'cunt']
+const forbiddenWords = ['fuck', 'bitch', 'ass', 'dumbass', 'cunt']
 const detectBadWords = true; // Toggle me for bad word screening!
 
 client.on('ready', () => {
