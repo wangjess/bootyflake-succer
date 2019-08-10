@@ -6,6 +6,9 @@ const client = new Discord.Client();
 const forbiddenWords = ['fuck', 'bitch', 'ass', 'dumbass', 'cunt']
 const detectBadWords = true; // Toggle me for bad word screening!
 
+// Needed for getProductivityQuote
+var fs = require("fs");
+
 client.on('ready', () => {
     console.log('I am ready!');
     // setInterval(getProductivityQuote, 30000);
@@ -63,13 +66,11 @@ const getDadJoke = async () => {
 }
 
 // Function that encouragingly nudges you 
-const getProductivityQuote = async () => {
+const getProductivityQuote = () => {
     console.log('Getting productive quote!');
     var fs = require("fs");
-    fs.readFile("./productivity_quotes.txt", function(text){
-        var textByLine = text.split("\n")
-    });
-    console.log(textByLine);
+    var text = fs.readFileSync("./mytext.txt");
+    var textByLine = text.split("\n");
 }
 
 // THIS  MUST  BE  THIS  WAY
