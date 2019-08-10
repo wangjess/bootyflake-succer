@@ -11,7 +11,7 @@ var fs = require("fs");
 
 client.on('ready', () => {
     console.log('I am ready!');
-    setInterval(funnyMessage, 30000);
+    setInterval(funnyMessage, 300);
 });
 
 // Will recognize commands to generate various quotes
