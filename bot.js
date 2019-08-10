@@ -11,7 +11,7 @@ var fs = require("fs");
 
 client.on('ready', () => {
     console.log('I am ready!');
-    // setInterval(getProductivityQuote, 30000);
+    setInterval(funnyMessage, 30000);
 });
 
 // Will recognize commands to generate various quotes
@@ -32,7 +32,6 @@ client.on('message', async message => {
     else if (message.content === '!encourageme') {
         message.reply(getProductivityQuote());
     }
-    // bug check that i cant do "ping fuck" or "!dadjoke fuck"
     else if (detectBadWords === true ) {
         for (var i = 0; i < forbiddenWords.length; i++) {
             if (message.content.toLowerCase().includes(forbiddenWords[i])) {
@@ -71,6 +70,11 @@ const getProductivityQuote = () => {
     var textByLine = text.split("\n");
     var item = textByLine[Math.floor(Math.random()*textByLine.length)];
     return item;
+}
+
+// Function that sends funny check-in message
+const funnyMessage = () => {
+    message.send("Are you spending your time the way you really want to?....")
 }
 
 // THIS  MUST  BE  THIS  WAY
