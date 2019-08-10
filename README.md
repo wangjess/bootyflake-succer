@@ -10,7 +10,7 @@ You can also change the command prompt and change the API call to use whatever q
 Need some encouragement to be productive? Easy! Just type in **!encourageme** and it'll give you a nice pick-me-up such as...
 > A word of encouragement during a failure is worth more than an hour of praise after success.” ~ Unknown
 
-Feel free to add your own favorite encouragement quotes by adding to ```productivity_quotes.txt```.
+Add your own favorite encouragement quotes by adding to ```productivity_quotes.txt```.
 
 # Bonus Effects
 
