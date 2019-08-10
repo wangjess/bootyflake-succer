@@ -69,6 +69,7 @@ const getProductivityQuote = () => {
     var text = fs.readFileSync("./productivity_quotes.txt").toString('utf-8');
     console.log(text);
     var textByLine = text.split("\n");
+    console.log(textByLine);
 }
 
 // THIS  MUST  BE  THIS  WAY
