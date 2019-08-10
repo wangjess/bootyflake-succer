@@ -29,8 +29,7 @@ client.on('message', async message => {
     else if (message.content === '!love') {
         message.reply('');
     }
-    else if (message.content === '!productivity') {
-        message.reply(getProductivityQuote);
+    else if (message.content === '!encourageme') {
         getProductivityQuote();
     }
     // bug check that i cant do "ping fuck" or "!dadjoke fuck"
