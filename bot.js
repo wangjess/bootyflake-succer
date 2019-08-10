@@ -30,9 +30,7 @@ client.on('message', async message => {
         for (var i = 0; i < forbiddenWords.length; i++) {
             if (message.content.toLowerCase().includes(forbiddenWords[i])) {
                 if (message.author.id === client.user.id) return;
-                // message.content contains a forbidden word;
-                // delete message, log, etc.
-                message.reply('Stop fucking cursing or I\'m going to suck your bootyflakes!');
+                message.reply('Stop cursing or I\'m going to suck your bootyflakes! Message DELETED!');
                 message.delete();
                 break;
             }
