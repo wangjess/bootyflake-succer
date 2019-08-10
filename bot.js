@@ -66,7 +66,7 @@ const getDadJoke = async () => {
 // Function that encouragingly nudges you 
 const getProductivityQuote = () => {
     console.log('Getting productive quote!');
-    var text = fs.readFileSync("./productivity_quotes.txt");
+    var text = fs.readFileSync("./productivity_quotes.txt").toString('utf-8');
     console.log(text);
     var textByLine = text.split("\n");
 }
