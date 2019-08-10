@@ -30,7 +30,7 @@ client.on('message', async message => {
         message.reply('');
     }
     else if (message.content === '!encourageme') {
-        getProductivityQuote();
+        message.reply(getProductivityQuote());
     }
     // bug check that i cant do "ping fuck" or "!dadjoke fuck"
     else if (detectBadWords === true ) {
@@ -64,12 +64,13 @@ const getDadJoke = async () => {
 }
 
 // Function that encouragingly nudges you 
+// Works by reading all the lines of a file into array, randomly pulls quote from the array
 const getProductivityQuote = () => {
     console.log('Getting productive quote!');
     var text = fs.readFileSync("./productivity_quotes.txt").toString('utf-8');
-    console.log(text);
     var textByLine = text.split("\n");
-    console.log(textByLine);
+    var item = textByLine[Math.floor(Math.random()*textByLine.length)];
+    return item;
 }
 
 // THIS  MUST  BE  THIS  WAY
