@@ -6,10 +6,12 @@ Add this robot so that you and your friends will not rage-quit after investing 5
 # Commands
 For example, make it emit great dad jokes with the **!dadjoke** command such as...
 > Dad died because he couldn't remember his blood type. I will never forget his last words. Be positive.
+
 You can also change the command prompt and change the API call to use whatever quotes you would like!
 
 Need some encouragement to be productive? Easy! Just type in **!encourageme** and it'll give you a nice pick-me-up such as...
 > “It is not enough to be busy… The question is: what are we busy about?” ~ Henry David Thoreau
+
 Feel free to add your own favorite encouragement quotes by adding to ```productivity_quotes.txt```.
 
 # Bonus Effects
