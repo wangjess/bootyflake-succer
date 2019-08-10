@@ -1,5 +1,5 @@
 # A Funny Quotes Discord Bot!
-Despite this weird name (Bootyflake-Succer), this friendly robot brings good! It emits constant positive impulses (messages) in your Discord server!
+Despite this weird name (Bootyflake-Succer), this friendly robot brings good! It emits constant positive impulses (messages) in your Discord server! I created this because I use Discord to communicate with my fellow programmer nerd friends, and sometimes we get stressed out. What better way to spice up and brighten an internet chat room than with a funny-named, silly robot that actually has practical use? Feel free to add this code to your own Discord channel!
 
 Add this robot so that you and your friends will not rage-quit after investing 50 minutes into that grueling League of Legends Summoner Rift's game even though your bot-lane Kalista complained that your Lee Sin jungler wouldn't gank or help at all, and you are one more "noob" message from your feeding mid lane from losing your sanity :D You may be thinking, "Wow, that was oddly specific." _It's okay, my child..._ **shhhh rubs your head**
 
@@ -10,7 +10,7 @@ For example, make it emit great dad jokes with the **!dadjoke** command such as.
 You can also change the command prompt and change the API call to use whatever quotes you would like!
 
 Need some encouragement to be productive? Easy! Just type in **!encourageme** and it'll give you a nice pick-me-up such as...
-> “It is not enough to be busy… The question is: what are we busy about?” ~ Henry David Thoreau
+> A word of encouragement during a failure is worth more than an hour of praise after success.” ~ Unknown
 
 Feel free to add your own favorite encouragement quotes by adding to ```productivity_quotes.txt```.
 
