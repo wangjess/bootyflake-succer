@@ -28,7 +28,7 @@ client.on('message', async message => {
     }
     else if (message.content === '!productivity') {
         message.reply(getProductivityQuote);
-        getProductivityQuote;
+        getProductivityQuote();
     }
     // bug check that i cant do "ping fuck" or "!dadjoke fuck"
     else if (detectBadWords === true ) {
