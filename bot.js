@@ -47,7 +47,6 @@ client.on('message', async message => {
 
 // Function that gives you a dad joke
 const getDadJoke = async () => {
-    console.log('Getting dad joke');
     try {
         const response = await fetch('https://icanhazdadjoke.com/',
         {
@@ -68,6 +67,7 @@ const getDadJoke = async () => {
 const getProductivityQuote = () => {
     console.log('Getting productive quote!');
     var text = fs.readFileSync("./productivity_quotes.txt");
+    console.log(text);
     var textByLine = text.split("\n");
 }
 

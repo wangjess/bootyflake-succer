@@ -7,11 +7,10 @@ Add this robot so that you and your friends will not rage-quit after investing 5
 For example, make it emit great dad jokes with the **!dadjoke** command such as...
 > Dad died because he couldn't remember his blood type. I will never forget his last words. Be positive.
 
+Need some encouragement to be productive? Easy! Just type in **!encourageme** and it'll give you a nice pick-me-up such as...
+> “It is not enough to be busy… The question is: what are we busy about?” ~ Henry David Thoreau
 
 # Bonus Effects
 
 ## Forbidden Words
 Bootyflake-Succer will also detect if bad words are said in your server and promptly send a scornful message to the bad word-sayer! It will also delete the message that contains the bad word! You can turn this feature off by going into ```bot.js``` and setting ```detectBadWords``` to ```false```.
-
-## Productive Quotes
-Bootyflake-Succer has more capabilities than simply scolding you for cursing! It will also send a productive quote to your Discord channel every 30 minutes. 
