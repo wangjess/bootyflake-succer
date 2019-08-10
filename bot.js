@@ -8,6 +8,7 @@ const detectBadWords = true; // Toggle me for bad word screening!
 
 client.on('ready', () => {
     console.log('I am ready!');
+    // setInterval(getProductivityQuote, 30000);
 });
 
 // Will recognize commands to generate various quotes
@@ -24,6 +25,9 @@ client.on('message', async message => {
     }
     else if (message.content === '!love') {
         message.reply('');
+    }
+    else if (message.content === '!productivity') {
+        message.reply(getProductivityQuote);
     }
     // bug check that i cant do "ping fuck" or "!dadjoke fuck"
     else if (detectBadWords === true ) {
@@ -57,7 +61,15 @@ const getDadJoke = async () => {
     }
 }
 
-// 
+// Function that encouragingly nudges you 
+const getProductivityQuote = async () => {
+    console.log('Getting productive quote!');
+    var fs = require("fs");
+    fs.readFile("./productivity_quotes.txt", function(text){
+        var textByLine = text.split("\n")
+    });
+    console.log(textByLine);
+}
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
