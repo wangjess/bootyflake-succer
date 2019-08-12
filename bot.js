@@ -74,7 +74,7 @@ const getProductivityQuote = () => {
 
 // Function that sends funny check-in message
 const funnyMessage = () => {
-    message.send("Are you spending your time the way you really want to?....")
+    message.send("Are you spending your time the way you really want to?....");
 }
 
 // THIS  MUST  BE  THIS  WAY
