@@ -11,7 +11,7 @@ var fs = require("fs");
 
 client.on('ready', () => {
     console.log('I am ready!');
-    // setInterval(funnyMessage, 300);
+    setInterval(funnyMessage, 300);
 });
 
 // Will recognize commands to generate various quotes
@@ -36,8 +36,8 @@ client.on('message', async message => {
         for (var i = 0; i < forbiddenWords.length; i++) {
             if (message.content.toLowerCase().includes(forbiddenWords[i])) {
                 if (message.author.id === client.user.id) return;
-                message.reply('Stop cursing or I\'m going to suck your bootyflakes! Message DELETED!');
-                message.delete();
+                message.reply('Stop cursing or I\'m going to suck your bootyflakes!');
+                // message.delete();
                 break;
             }
         }
