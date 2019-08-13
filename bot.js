@@ -97,8 +97,21 @@ const funnyMessage = () => {
 
 // Function that randomly gets a gif via Giphy Random API Endpoint
 const randomGiphy = () => {
-    var xhr = $.get("https://api.giphy.com/v1/gifs/random?api_key=${process.env.GIPHY_API}&tag=&rating=G");
-    xhr.done(function(data) { console.log("success got data", data); });
+    try {
+        const response = await fetch('https://api.giphy.com/v1/gifs/random?api_key=${process.env.GIPHY_API}&tag=&rating=G',
+        {
+            method: 'GET',
+            headers: {
+              'Accept': 'application/json'
+            },
+        });
+        const myJson = await response.json();
+        console.log('json');
+        console.log(myJson);
+    }
+    catch {
+        console.log("couldnt fetch a gif bruh.");
+    }
 }
 
 // THIS  MUST  BE  THIS  WAY
