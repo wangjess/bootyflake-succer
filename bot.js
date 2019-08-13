@@ -108,7 +108,7 @@ const randomGiphy = async () => {
         const myJson = await response.json();
         console.log('json');
         console.log(myJson);
-        return myJson['original']['url'];
+        return myJson['data']['original']['url'];
     }
     catch {
         console.log("couldnt fetch a gif bruh.");
