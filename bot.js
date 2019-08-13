@@ -48,7 +48,7 @@ client.on('message', async message => {
     }
     else if (message.content === '!gif') {
         message.reply('getting gif...');
-        randomGiphy();
+        message.reply(randomGiphy());
     }
     else if (detectBadWords === true ) {
         for (var i = 0; i < forbiddenWords.length; i++) {
@@ -108,6 +108,7 @@ const randomGiphy = async () => {
         const myJson = await response.json();
         console.log('json');
         console.log(myJson);
+        return myJson['data']['url'];
     }
     catch {
         console.log("couldnt fetch a gif bruh.");
