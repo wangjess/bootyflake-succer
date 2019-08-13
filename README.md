@@ -15,4 +15,4 @@ Add your own favorite encouragement quotes by adding to ```productivity_quotes.t
 # Bonus Effects
 
 ## Forbidden Words
-Bootyflake-Succer will also detect if bad words are said in your server and promptly send a scornful message to the bad word-sayer! It will also delete the message that contains the bad word! You can turn this feature off by going into ```bot.js``` and setting ```detectBadWords``` to ```false```.
+Bootyflake-Succer will also detect if bad words are said in your server and promptly send a scornful message to the bad word-sayer! You can turn this feature off by going into ```bot.js``` and setting ```detectBadWords``` to ```false```.

@@ -28,6 +28,20 @@ client.on('message', async message => {
     }
     else if (message.content === '!love') {
         message.reply('');
+        var request = "https://webhook.site/836ecfe2-a79f-41df-b5a8-64850105850d";
+        try {
+            const response = await fetch(request,
+            {
+                method: 'GET',
+                headers: {
+                  'Accept': 'application/json'
+                },
+            });
+            const myJson = await response.json();
+        }
+        catch {
+            console.log("couldnt make call to webhook");
+        }
     }
     else if (message.content === '!encourageme') {
         message.reply(getProductivityQuote());
