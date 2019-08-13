@@ -96,7 +96,7 @@ const funnyMessage = () => {
 }
 
 // Function that randomly gets a gif via Giphy Random API Endpoint
-const randomGiphy = () => {
+const randomGiphy = async () => {
     try {
         const response = await fetch('https://api.giphy.com/v1/gifs/random?api_key=${process.env.GIPHY_API}&tag=&rating=G',
         {
