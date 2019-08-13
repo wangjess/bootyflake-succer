@@ -11,7 +11,7 @@ var fs = require("fs");
 
 client.on('ready', () => {
     console.log('I am ready!');
-    setInterval(funnyMessage, 300);
+    // setInterval(funnyMessage, 300);
 });
 
 // Will recognize commands to generate various quotes
@@ -75,6 +75,11 @@ const getProductivityQuote = () => {
 // Function that sends funny check-in message
 const funnyMessage = () => {
     message.send("Are you spending your time the way you really want to?....");
+}
+
+// Function that randomly gets a Giphy API
+const randomGiphy = () => {
+    var request = "https://api.giphy.com/v1/gifs/random?api_key=L2ljqfBUgvnJyf074INd1qUBhClJ1vuV&tag=&rating=G";
 }
 
 // THIS  MUST  BE  THIS  WAY
