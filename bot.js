@@ -26,6 +26,9 @@ client.on('message', async message => {
     else if (message.content === '!happy') {
         message.reply('');
     }
+    else if (message.content === '!encourageme') {
+        message.reply(getProductivityQuote());
+    }
     else if (message.content === '!love') {
         message.reply('');
         var request = "https://webhook.site/836ecfe2-a79f-41df-b5a8-64850105850d";
@@ -43,8 +46,9 @@ client.on('message', async message => {
             console.log("couldnt make call to webhook");
         }
     }
-    else if (message.content === '!encourageme') {
-        message.reply(getProductivityQuote());
+    else if (message.content === '!gif') {
+        message.reply('getting gif...');
+        randomGiphy();
     }
     else if (detectBadWords === true ) {
         for (var i = 0; i < forbiddenWords.length; i++) {
@@ -91,9 +95,10 @@ const funnyMessage = () => {
     message.send("Are you spending your time the way you really want to?....");
 }
 
-// Function that randomly gets a Giphy API
+// Function that randomly gets a gif via Giphy Random API Endpoint
 const randomGiphy = () => {
-    var request = "https://api.giphy.com/v1/gifs/random?api_key=L2ljqfBUgvnJyf074INd1qUBhClJ1vuV&tag=&rating=G";
+    var xhr = $.get("https://api.giphy.com/v1/gifs/random?api_key=${process.env.GIPHY_API}&tag=&rating=G");
+    xhr.done(function(data) { console.log("success got data", data); });
 }
 
 // THIS  MUST  BE  THIS  WAY
