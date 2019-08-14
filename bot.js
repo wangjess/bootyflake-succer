@@ -49,8 +49,6 @@ client.on('message', async message => {
     else if (message.content === '!gif') {
         message.reply('getting gif...');
         var gif_url = randomGiphy();
-        console.log(`gif_url: ${gif_url}`);
-        message.reply(gif_url);
         message.reply(randomGiphy());
     }
     else if (detectBadWords === true ) {
