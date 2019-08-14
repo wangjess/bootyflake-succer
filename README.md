@@ -13,7 +13,7 @@ Need some encouragement to be productive? Easy! Just type in **!encourageme** an
 Add your own favorite encouragement quotes by adding to ```productivity_quotes.txt```.
 
 Want a dosage of randomness? Do **!gif** and you'll get a random Giphy GIF! _Beware, I do not know what you may end up getting. Use at your own risk!_
-> ![weird gif](./misc/download.gif)
+> <img src="/misc/download.gif.gif?raw=true" width="200px">
 
 # Bonus Effects
 
