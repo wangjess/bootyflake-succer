@@ -26,3 +26,4 @@ Bootyflake-Succer will also detect if bad words are said in your server and prom
 # My Public To-Do List To Keep Me Accountable (hahahahaha... *insert ragretz here*)
 - [ ] Integrate something so it catches bad words like _ash0l3_ and _fuccc_
 - [ ] Integrate dating APIs so that even when you're hard at work, Bootyflake-Succer will notify you that you have X many matches :sunglasses:
+- [ ] Integrate your calendar apps so that Bootyflake-Succer will do all the worrying and alerting you of upcoming events
