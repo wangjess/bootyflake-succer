@@ -111,6 +111,8 @@ const randomGiphy = async () => {
         console.log(myJson);
         console.log('data');
         console.log(myJson['data']);
+        console.log('data url');
+        console.log(myJson['data']['url']);
         console.log(`GET URL BROOOOO: ${myJson['data']['url']}`);
         return myJson['data']['url'];
     }
