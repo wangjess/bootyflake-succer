@@ -4,11 +4,13 @@ Despite this weird name (Bootyflake-Succer), this friendly robot brings good! It
 # Commands
 * For example, make it emit great dad jokes with the **!dadjoke** command such as...
 > Dad died because he couldn't remember his blood type. I will never forget his last words. Be positive.
+
 You can also change the command prompt and change the API call to use whatever quotes you would like!
 <br />
 
 * Need some encouragement to be productive? Easy! Just type in **!encourageme** and it'll give you a nice pick-me-up such as...
 > A word of encouragement during a failure is worth more than an hour of praise after success.” ~ Unknown
+
 Add your own favorite encouragement quotes by adding to ```productivity_quotes.txt```.
 <br />
 
