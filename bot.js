@@ -12,12 +12,13 @@ var fs = require("fs");
 client.on('ready', () => {
     console.log('I am ready!');
     // setInterval(funnyMessage, 300);
+    //afad
 });
 
 // Will recognize commands to generate various quotes
 client.on('message', async message => {
     if (message.content === '!help') {
-        message.reply('Hi, I\'m your weird funny companion!\n`!dadjoke:` I\'ll say a dadjoke!\n`!encourageme:` I\'ll say an encouraging quote!\n`!gif:` I\'ll get a random gif');
+        message.reply('Hi, I\'m your weird funny companion!\n`!dadjoke:` I\'ll say a dadjoke!\n`!encourageme:` I\'ll say an encouraging quote!\n`!gif:` I\'ll get a random gif just fer you bb.');
     }
     else if (message.content === '!dadjoke') {
         var dadJoke = await getDadJoke();
