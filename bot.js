@@ -13,6 +13,7 @@ client.on('ready', () => {
     console.log('I am ready!');
     // setInterval(funnyMessage, 300);
     //afad
+    //aosidjfcoaijfcoajfFUCKWORK
 });
 
 // Will recognize commands to generate various quotes
